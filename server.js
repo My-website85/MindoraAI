@@ -5,7 +5,7 @@ require("dotenv").config();
 const { GoogleGenAI } = require("@google/genai");
 
 const app = express();
-const PORT = process.env.port || 3000;
+const PORT = process.env.port || 10000;
 
 const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY
