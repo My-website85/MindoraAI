@@ -73,6 +73,6 @@ const response = await ai.models.generateContent({
   }
 });
 console.log("about to start server");
-app.listen(PORT, () => {
-  console.log(`AI Writer server running at http://localhost:${PORT}`);
+app.listen(PORT, "0.0,0,0",() => {
+  console.log(`AI Writer server running on port ${PORT}`);
 });
