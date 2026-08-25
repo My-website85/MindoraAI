@@ -14,6 +14,9 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(__dirname));
 
+app.get("/health", (req, res) => {
+  res.status(200).send("OK");
+});
 app.post("/api/generate", async (req, res) => {
   try {
     const { input, mode } = req.body;
